@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII-Art-Web</title>
+    <link rel="stylesheet" href="front/styles.css">
+</head>
+
+<body>
+    <div class="col">
+        <h1>ASCII-art-web</h1>
+        <div class="howTo">How it works?<br>
+            1. Type the text to input area<br>
+            2. Choose the font style<br>
+            3. Click Submit button.
+        </div>
+        <form action="?" method="post">
+            <textarea class="insert-value" name="textin"></textarea>
+            <div class="radio-toolbar">
+                <input type="radio" id="radio1" name="font" value="standard" checked>
+                <label for="radio1" title="Standard font">Standard</label>
+
+                <input type="radio" id="radio2" name="font" value="shadow">
+                <label for="radio2" title="Shadow font">Shadow</label>
+                
+                <input type="radio" id="radio3" name="font" value="thinkertoy">
+                <label for="radio3" title="Thinkertoy font">Thinkertoy</label>
+            </div>
+            <div class="button">
+               
+                <button class="submit-div" type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="textarea-container">
+        {{if .Result}}
+            <textarea name="ascii-output" id="output" readonly>{{ .Result}}</textarea>
+        {{else}}
+            <textarea name="ascii-output" id="nothing" style="display: none"></textarea>
+        {{end}}
+    </div>
+</body>
+
+</html>

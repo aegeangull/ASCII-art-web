@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(250, 236, 204);
+}
+
+.col {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+h1 {
+    color: rgb(76, 20, 140)
+}
+
+textarea {
+    background-color: rgb(96, 146, 221);
+    border: 1px solid rgb(80, 129, 204);
+    color: rgb(255, 248, 222);
+    height: 5em;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    margin: 0.25em;
+}
+
+textarea[id="output"] {
+    margin: auto;
+    margin-top: 10px;
+    height: 24em;
+}
+
+.radio-toolbar {
+    margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: rgb(221, 221, 221);
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid rgb(10, 182, 216);
+    border-radius: 4px;
+}
+
+.radio-toolbar label:hover {
+    background-color: rgb(221, 231, 255);
+}
+
+.radio-toolbar input[type="radio"]:focus+label {
+    border: 2px dashed rgb(35, 164, 234);
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: rgb(187, 202, 255);
+    border-color: rgb(68, 102, 204);
+}
+
+.submit-div {
+    display: inline-block;
+    color: rgb(206, 236, 248);
+    background-color: rgb(58, 172, 230);
+    text-align: center;
+    height: 8vh;
+    width: 10vw;
+    min-width: 130px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.submit-div:hover {
+    color: rgb(13, 107, 221);
+    background-color: rgb(187, 202, 255);
+    box-shadow: 0 8px 16px 0 rgba(54, 10, 228, 0.2), 0 6px 20px 0 rgba(30, 9, 220, 0.19)
+}
